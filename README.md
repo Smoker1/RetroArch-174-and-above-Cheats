@@ -11,6 +11,8 @@ PrBoom - doom.wad
 
 FBA -
 
+sf - Street Fighter
+
 sfzch - Street Fighter Zero (CPS Changer)
 
 simpsons2p - The Simpsons - 2 Player

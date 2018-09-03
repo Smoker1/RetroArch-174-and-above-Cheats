@@ -5,7 +5,9 @@ Note: Sometimes, depending on the Game, it will not follow a Hex Value. There ar
 
 Games or Cores that do NOT work when trying to Search for Cheats. To be Continued
 
-Problem: You Initiate a Search. You return to the Game, and get hit, or let the Game Time run down. You go back into the Search and go to the Values or Less Than and try to enter that......but it says the Search has not yet been Initiated.....but you just did earlier!!!! So until there is a fix, so far, these Games/Roms will not work with the RetroArch Cheat Search/Creation Tool
+Problem: You Initiate a Search. You return to the Game, and get hit, or let the Game Time run down. You go back into the Search and go to the Values or Less Than and try to enter that......but it says the Search has not yet been Initiated.....but you just did earlier!!!! So until there is a fix, so far, these Games/Roms will not work with the RetroArch Cheat Search/Creation Tool.
+
+I have also Tested the Cheat Search/Creation on my Computer, but it gave the same result.
 
 PrBoom - doom.wad
 

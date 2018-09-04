@@ -13,6 +13,8 @@ PrBoom - doom.wad
 
 FBA -
 
+1944 - 1944-The Loop Master - Cheat Address System does not go high enough ( 0x921D51 )
+
 sf - Street Fighter
 
 sfzch - Street Fighter Zero (CPS Changer)

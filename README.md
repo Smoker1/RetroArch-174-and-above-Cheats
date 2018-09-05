@@ -73,3 +73,6 @@ Instructions to find and Make Cheats. Let us start with msh (Marvel Super Heroes
 20: I hope that I have Written this as good as possible for Noobs as I can. Being a Noob myself at certain Levels, I hope this helps other Users.
 
 21: NOTE - For those Users who have the 3DS with RetroArch Installed, I have noticed a Issue. For some reason, I can not start up a Search for Cheats for some reason. I have Tested this on my Android Device and found the File Structure is exactly the same. So you will need to Copy over the Cheats Directory from your Vita at "ux0:Data/RetroArch/Cheats" . I suggest taking the entire Directory. Place this in the 3DS RetroArch Folder. This may, or may not work. Hopefully this will get taken care of soon. Until then, just use Gateway Cheat System, NTR if possible or any other Cheat Searching/Creation tool available.
+
+22: Hint for GB / GBC Cheats: If it shows up looking like the GameShark or RAW Address, just slightly rearranged, THAT is the Address you are looking for. 
+Example: Street Fighter Alpha (GBC). RAW Address - CF09:63 (Address:Value) or GS - 016309CF (63 is Value, 09CF area)... RA Code Address is just 00000F09 with the Value being 99(63). So pretty easy to find, just find the one that closely matches :D

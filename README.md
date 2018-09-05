@@ -13,6 +13,8 @@ PrBoom - doom.wad
 
 FBA -
 
+1943 - 1943-The Battle of Midway
+
 1944 - 1944-The Loop Master - Cheat Address System does not go high enough ( 0x921D51 )
 
 sf - Street Fighter

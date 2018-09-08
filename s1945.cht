@@ -1,0 +1,13 @@
+cheats = 3
+
+cheat0_desc = "Infinite Lives P1"
+cheat0_code = "0xFE1155+0x05" 
+cheat0_enable = false
+
+cheat1_desc = "P1 Invincible"
+cheat1_code = "0xFE1183+0x78" 
+cheat1_enable = false
+
+cheat2_desc = "P1 Max Fire Power"
+cheat2_code = "0xFE115B+0x03" 
+cheat2_enable = false

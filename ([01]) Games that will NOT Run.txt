@@ -1,4 +1,7 @@
 Mortal Kombat 3 Games, Including UMK3
 Fighters History will Crash RetroArch
 
-FBA 2012 Cores can not have Cheats Made for some reason. I have tested CPS1, CPS2 and the FBA2012 Cores. Get the same Error about the Search has not been Started yet, when I did. Also, trying to Load up FBA (Current Core) will Crash the App.
+FBA 2012 Cores can not have Cheats Made for some reason. I have tested CPS1, 
+CPS2 and the FBA2012 Cores. Get the same Error about the Search has not been
+Started yet, when I did. 
+Also, trying to Load up FBA (Current Core) will Crash the App.

@@ -5,3 +5,5 @@ FBA 2012 Cores can not have Cheats Made for some reason. I have tested CPS1,
 CPS2 and the FBA2012 Cores. Get the same Error about the Search has not been
 Started yet, when I did. 
 Also, trying to Load up FBA Cheats (Current Build Core) will Crash the App.
+
+MAME2003 and 2003+ will not Start a Cheat Search as well. Just use the 0.78, 0.81 or possibly the 126 Cheat File for now.

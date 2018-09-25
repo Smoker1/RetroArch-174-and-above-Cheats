@@ -7,3 +7,8 @@ Started yet, when I did.
 Also, trying to Load up FBA Cheats (Current Build Core) will Crash the App.
 
 MAME2003 and 2003+ will not Start a Cheat Search as well. Just use the 0.78, 0.81 or possibly the 126 Cheat File for now.
+
+PrBoom still will not allow for Cheat Search to start
+
+DOSBox CAN start a Cheat Search, so if you have everything working, you can create Cheats possibly.
+Just wondering how to get it Setup on the Vita

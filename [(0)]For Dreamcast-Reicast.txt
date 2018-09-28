@@ -1,0 +1,8 @@
+The Dreamcast Codes seem to match Exactly as shown on the GameHacking Site and
+the CodeTink Site. It may only show xxXXXXXX , but if it matches what the Code should
+be for the rest of it, you are good.
+
+Not sure why I cant get the Android Build of Reicast working. Keeps Crashing
+on me. But the PC Build (Windows x64) seems to be working perfectly. Was able
+to create a few MvsC2 Codes with no Issues. Figure I will keep creating them, then
+when the Android Build starts working again, will have Codes for a few Games.

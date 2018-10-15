@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<CheatTable CheatEngineTableVersion="12">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>0</ID>
+      <Description>"Hit Anywhere Both Players"</Description>
+      <Color>80000008</Color>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>//Mortal Kombat DOS
+
+[enable]
+aobscan(_hitany,0F 8D 91 00 00 00 66)
+label(hitany)
+registersymbol(hitany)
+_hitany:
+hitany:
+db EB 23 91 00 00 00 66
+
+
+[disable]
+hitany:
+db 0F 8D 91 00 00 00 66
+</AssemblerScript>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols>
+    <SymbolEntry>
+      <Name>hitany</Name>
+      <Address>0715663E</Address>
+    </SymbolEntry>
+  </UserdefinedSymbols>
+</CheatTable>

@@ -1,0 +1,624 @@
+<?xml version="1.0"?>
+<CheatTable CheatEngineTableVersion="12">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>0</ID>
+      <Description>"Timer"</Description>
+      <Color>80000008</Color>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[Enable]
+004291B9:
+nop
+nop
+
+
+[Disable]
+004291B9:
+sub [ecx],eax
+
+
+
+
+
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"Timer Decreases Quickly"</Description>
+      <Color>80000008</Color>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[Enable]
+alloc(newmem,200) //2kb should be enough
+label(returnhere)
+label(originalcode)
+label(exit)
+
+004291B9:
+jmp newmem
+nop
+nop
+returnhere:
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+
+sub [ecx],63
+
+originalcode:
+sub [ecx],eax
+mov eax,0074b248
+
+exit:
+jmp returnhere
+
+[Disable]
+dealloc(newmem)
+004291B9:
+sub [ecx],eax
+mov eax,0074b248
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"1st Place Turismo Mission"</Description>
+      <Color>80000008</Color>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[Enable]
+alloc(newmem,2048) //2kb should be enough
+label(returnhere)
+label(originalcode)
+label(exit)
+
+004397E8:
+jmp newmem
+nop
+nop
+returnhere:
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+
+cmp eax,11
+jge originalcode
+
+mov [0074d718],11
+
+originalcode:
+add [esi],eax
+xor al,al
+add esp,38
+
+exit:
+jmp returnhere
+
+[Disable]
+dealloc(newmem)
+004397E8:
+add [esi],eax
+xor al,al
+add esp,38
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>3</ID>
+      <Description>"Bulletproof All Cars"</Description>
+      <Color>80000008</Color>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[Enable]
+00551C1A:
+nop
+nop
+nop
+nop
+
+[Disable]
+00551C1A:
+fsub dword ptr [esp+28]
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>4</ID>
+      <Description>"No Wanted Level"</Description>
+      <Color>80000008</Color>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>
+[Enable]
+alloc(newmem,2048) //2kb should be enough
+label(returnhere)
+label(originalcode)
+label(exit)
+
+004ADD03:
+jmp newmem
+nop
+returnhere:
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+
+mov [ecx],0
+mov [ecx+18],0
+
+originalcode:
+mov eax,[ecx+18]
+mov edx,[ecx+18]
+
+exit:
+jmp returnhere
+
+[Disable]
+004ADD03:
+dealloc(newmem)
+mov eax,[ecx+18]
+mov edx,[ecx+18]
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>5</ID>
+      <Description>"Timer for Out of Police Car"</Description>
+      <Color>80000008</Color>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[Enable]
+0043ADEC:
+nop
+nop
+
+[Disable]
+0043ADEC:
+sub [esi],eax
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>6</ID>
+      <Description>"Paramedic More than 3 Patients"</Description>
+      <Color>80000008</Color>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[Enable]
+alloc(newmem,100) //2kb should be enough
+label(returnhere)
+label(exit)
+
+00551FBD:
+jmp newmem
+nop
+nop
+nop
+returnhere:
+
+newmem:
+
+cmp dword ptr [ebp+eax*4+000001a8],ff
+
+
+
+
+exit:
+jmp returnhere
+
+[Disable]
+dealloc(newmem)
+00551FBD:
+cmp dword ptr [ebp+eax*4+000001a8],00
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>7</ID>
+      <Description>"Rigged! Mission 1st Checkpoint Worth 18"</Description>
+      <Color>80000008</Color>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[Enable]
+alloc(newmem,2048) //2kb should be enough
+label(returnhere)
+label(originalcode)
+label(exit)
+
+004397E8:
+jmp newmem
+nop
+nop
+returnhere:
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+
+cmp [0074c480],12
+jge originalcode
+
+mov [0074c480],12
+
+
+originalcode:
+add [esi],eax
+xor al,al
+add esp,38
+
+exit:
+jmp returnhere
+
+[Disable]
+dealloc(newmem)
+004397E8:
+add [esi],eax
+xor al,al
+add esp,38
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>8</ID>
+      <Description>"No description"</Description>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>6e9634</Address>
+      <Offsets>
+        <Offset>2C6</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>9</ID>
+      <Description>"No description"</Description>
+      <Color>80000008</Color>
+      <VariableType>Float</VariableType>
+      <Address>70D830</Address>
+      <Offsets>
+        <Offset>200</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>10</ID>
+      <Description>"Turismo Checkpoints"</Description>
+      <Color>80000008</Color>
+      <VariableType>Byte</VariableType>
+      <Address>gta3.exe+34D718</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>11</ID>
+      <Description>"2nd Car"</Description>
+      <Color>80000008</Color>
+      <VariableType>Float</VariableType>
+      <Address>70D834</Address>
+      <Offsets>
+        <Offset>200</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>12</ID>
+      <Description>"Taxi Passengers Dropped off"</Description>
+      <Color>80000008</Color>
+      <VariableType>Byte</VariableType>
+      <Address>0074B874</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>13</ID>
+      <Description>"Fires Extiguished"</Description>
+      <Color>80000008</Color>
+      <VariableType>Byte</VariableType>
+      <Address>gta3.exe+4F60A0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>14</ID>
+      <Description>"No description"</Description>
+      <Color>80000008</Color>
+      <VariableType>Byte</VariableType>
+      <Address>gta3.exe+34C7B4</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>15</ID>
+      <Description>"Hours"</Description>
+      <Color>80000008</Color>
+      <VariableType>Byte</VariableType>
+      <Address>0095CF5F</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>16</ID>
+      <Description>"Group 1"</Description>
+      <Color>80000008</Color>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>17</ID>
+          <Description>"Infinite Ammo"</Description>
+          <Color>80000008</Color>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>
+[Enable]
+0055C901:
+nop
+nop
+nop
+
+0055C919:
+nop
+nop
+nop
+
+0055CAD1:
+nop
+nop
+nop
+
+0055CAE2:
+nop
+nop
+nop
+
+[Disable]
+0055C901:
+dec [edi+08]
+
+0055C919:
+dec [edi+0c]
+
+0055CAD1:
+dec [esi+08]
+
+0055CAE2:
+dec [esi+0c]
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>18</ID>
+          <Description>"Never Lose Weapons"</Description>
+          <Color>80000008</Color>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>
+[ENABLE]
+004CFC72:
+jmp 004cfe61
+nop
+nop
+nop
+nop
+nop
+nop
+
+[DISABLE]
+004CFC72:
+mov [ebx+edx+0000035c],00000000
+
+
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>19</ID>
+          <Description>"Infinite Armor"</Description>
+          <Color>80000008</Color>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[Enable]
+alloc(newmem,2048) //2kb should be enough
+label(returnhere)
+label(originalcode)
+label(exit)
+
+
+00506917:
+jmp newmem
+nop
+returnhere:
+
+newmem: //this is allocated memory, you have read,write,execute access
+
+mov [eax+000002c4],42c80000
+
+originalcode:
+fld dword ptr [eax+000002c4]
+
+exit:
+jmp returnhere
+
+
+[Disable]
+00506917:
+fld dword ptr [eax+000002c4]
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>20</ID>
+          <Description>"Infinite Run"</Description>
+          <Color>80000008</Color>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[Enable]
+alloc(newmem,2048) //2kb should be enough
+label(returnhere)
+label(originalcode)
+label(exit)
+
+004F13F0:
+jmp newmem
+nop
+returnhere:
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+
+mov [ecx+00000548],43480000
+
+originalcode:
+fld dword ptr [ecx+00000548]
+
+exit:
+jmp returnhere
+
+[Disable]
+dealloc(newmem)
+004F13F0:
+fld dword ptr [ecx+00000548]
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>21</ID>
+          <Description>"Car DMA Disable"</Description>
+          <Color>80000008</Color>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[Enable]
+0041F7B0:
+jmp 0041f7c4
+
+[Disable]
+0041F7B0:
+jne 0041f7bd
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>22</ID>
+          <Description>"Disable Car Damage"</Description>
+          <Color>80000008</Color>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[Enable]
+alloc(newmem,2000) //2kb should be enough
+label(returnhere)
+label(one)
+label(two)
+label(exit)
+
+00594ACF:
+jmp newmem
+nop
+returnhere:
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+
+push ebx
+mov ebx,[0070d830]
+cmp ebx,0
+je one
+
+mov [ebx+200],447a0000
+
+one:
+mov ebx,[0070d834]
+cmp ebx,0
+je two
+
+mov [ebx+200],447a0000
+
+
+two:
+pop ebx
+
+exit:
+jmp returnhere
+
+
+[Disable]
+dealloc(newmem)
+00594ACF:
+fld dword ptr [ebx+00000200]
+</AssemblerScript>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>23</ID>
+      <Description>"Group 2"</Description>
+      <Color>80000008</Color>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>24</ID>
+          <Description>"Rampage Kills Worth 5"</Description>
+          <Color>80000008</Color>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[Enable]
+alloc(newmem,2048) //2kb should be enough
+label(returnhere)
+label(exit)
+
+004210B1:
+jmp newmem
+nop
+returnhere:
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+
+
+sub [008f1b6c],5
+
+exit:
+jmp returnhere
+
+[Disable]
+dealloc(newmem)
+004210B1:
+dec [008f1b6c]
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>25</ID>
+          <Description>"Rampage Kills Worth 5 (2nd part)"</Description>
+          <Color>80000008</Color>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[Enable]
+alloc(newmem,100) //2kb should be enough
+label(returnhere)
+label(exit)
+
+00421000:
+jmp newmem
+nop
+returnhere:
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+
+
+sub [008f1b6c],5
+
+exit:
+jmp returnhere
+
+[Disable]
+dealloc(newmem)
+00421000:
+dec [008f1b6c]
+</AssemblerScript>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>26</ID>
+      <Description>"Get Items From Anywhere"</Description>
+      <Color>80000008</Color>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[enable]
+alloc(newmem,2048) //2kb should be enough
+label(returnhere)
+label(good)
+label(exit)
+
+newmem:
+push eax
+mov eax,[esi]
+cmp al,04
+je good
+cmp al,05
+je good
+cmp al,07
+jne exit
+
+good:
+pop eax
+jmp 00430E0D
+
+exit:
+pop eax
+fcomp dword ptr [005EDE68]
+jmp returnhere
+
+00430DF9:
+jmp newmem
+nop
+returnhere:
+
+[disable]
+dealloc(newmem)
+00430DF9:
+fcomp dword ptr [005EDE68]
+
+
+</AssemblerScript>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>

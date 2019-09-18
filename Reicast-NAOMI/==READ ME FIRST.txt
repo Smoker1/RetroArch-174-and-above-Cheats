@@ -1,0 +1,3 @@
+Most Cheats should work. 
+
+I found that the MAME capvssnk.zip needed new Cheats to be created. All the rest worked.
